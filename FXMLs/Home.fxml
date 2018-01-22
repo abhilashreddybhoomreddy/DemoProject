@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+/*
+ * Copyright (c) abhilashreddy.
+ * All rights reserved. Use is subject to license terms.
+ *
+  
+ */
+-->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="600.0" prefWidth="800.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="75.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <center>
+            <ImageView fitHeight="67.0" fitWidth="200.0" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../resources/bingo.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <AnchorPane prefHeight="527.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox layoutX="31.0" layoutY="6.0" prefHeight="74.0" prefWidth="728.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="41.0">
+               <children>
+                  <ImageView fitHeight="75.0" fitWidth="200.0" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@../resources/Single1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="38.0" layoutY="110.0" prefHeight="330.0" prefWidth="728.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="34.0">
+               <children>
+                  <HBox layoutX="37.0" layoutY="96.0" prefHeight="40.0" prefWidth="659.0" spacing="10.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="32.0">
+                     <children>
+                        <Label lineSpacing="5.0" prefHeight="26.0" prefWidth="99.0" text="Enter Playername1" HBox.hgrow="ALWAYS" />
+                        <TextField prefHeight="25.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="29.0" prefWidth="99.0" text="Enter Playername2" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <BorderPane layoutX="32.0" layoutY="191.0" prefHeight="63.0" prefWidth="665.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="31.0">
+                     <center>
+                        <Button fx:id="continueButton" mnemonicParsing="false" onAction="#continueClicked" prefHeight="25.0" prefWidth="95.0" text="Continue" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <BorderPane layoutX="75.0" layoutY="449.0" prefHeight="63.0" prefWidth="684.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="41.0">
+               <center>
+                  <Label prefHeight="17.0" prefWidth="143.0" text="Owned by ©abhilashreddy" textFill="#dd0606" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>
